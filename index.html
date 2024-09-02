@@ -15,35 +15,6 @@
     <div class="">
                 
       <section class="overflow-hidden" x-data="{ mobileNavOpen: false }">
-        <div class="bg-indigo-500">
-          <div class="container px-4 mx-auto">
-            <div class="flex justify-center py-5">
-              <div class="w-auto">
-                <div class="flex flex-wrap items-center justify-center">
-                  <div class="w-auto hidden lg:block">
-                    <ul class="flex items-center justify-center mr-8">
-                      <li class="mr-14 font-medium text-white hover:text-gray-200 tracking-tight"><a href="#">Features</a></li>
-                      <li class="mr-14 font-medium text-white hover:text-gray-200 tracking-tight"><a href="#">Pricing</a></li>
-                      <li class="mr-8 font-medium text-white hover:text-gray-200 tracking-tight border-r border-gray-500 pr-8"><a href="#">Automation</a></li>
-                      <li class="font-medium text-white hover:text-gray-200 tracking-tight"><a href="#">Customer</a></li>
-                    </ul>
-                  </div>
-                  <div class="w-auto hidden lg:block">
-                    <!-- Bagian ini dibiarkan kosong karena tidak ada konten -->
-                  </div>
-                  <div class="w-auto lg:hidden">
-                    <button x-on:click="mobileNavOpen = !mobileNavOpen">
-                      <svg class="text-indigo-600" width="51" height="51" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="56" height="56" rx="28" fill="currentColor"></rect>
-                        <path d="M37 32H19M37 24H19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         
           <div :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}" class="hidden fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50">
             <div x-on:click="mobileNavOpen = !mobileNavOpen" class="fixed inset-0 bg-gray-800 opacity-80"></div>
@@ -52,11 +23,6 @@
                 <div class="w-full">
                   <div class="flex items-center justify-between -m-2">
                     <div class="w-auto p-2">
-                      <a class="inline-block" href="#">
-                        <img src="basko-assets/logos/basko-logo-light.png" alt="">
-                      </a>
-                    </div>
-                    <div class="w-auto p-2">
                       <button x-on:click="mobileNavOpen = !mobileNavOpen" class="text-white">
                         <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -64,14 +30,6 @@
                       </button>
                     </div>
                   </div>
-                </div>
-                <div class="flex flex-col justify-center py-16 w-full">
-                  <ul>
-                    <li class="mb-12 font-medium text-white hover:text-gray-200 tracking-tight"><a href="#">Features</a></li>
-                    <li class="mb-12 font-medium text-white hover:text-gray-200 tracking-tight"><a href="#">Pricing</a></li>
-                    <li class="mb-12 font-medium text-white hover:text-gray-200 tracking-tight"><a href="#">Automation</a></li>
-                    <li class="font-medium text-white hover:text-gray-200 tracking-tight"><a href="#">Customer</a></li>
-                  </ul>
                 </div>
                 <div class="flex flex-col justify-end w-full pb-8"><a class="inline-block px-5 py-3 text-white font-semibold text-center tracking-tight bg-indigo-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200" href="#">Try 14 Days Free Trial</a></div>
               </div>
@@ -111,66 +69,59 @@
                   </div>
                   <div class="flex-1 p-2">
                     <div class="max-w-xs mx-auto py-0.5 px-4 text-sm text-white text-opacity-50 text-center bg-white bg-opacity-10 tracking-tight rounded">
-                      <span>basko.co</span>
+                      <span>QR Code</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="p-12 bg-gray-700">
                 <div class="flex flex-wrap lg:items-center -m-8">
-                  <div class="w-full md:w-1/2 p-8">
-                    <div class="max-w-md">
-                      <div class="flex flex-wrap -m-4">
-                        <div class="w-full p-4">
-                          <div class="flex flex-wrap -m-2">
-                            <div class="w-auto p-2">
-                              <span class="inline-block text-xl text-white font-semibold tracking-tight">1.</span>
+                    <div class="w-full md:w-1/2 p-8">
+                        <div class="max-w-md">
+                            <div class="flex flex-wrap -m-4">
+                                <div class="w-full p-4">
+                                    <div class="flex flex-wrap -m-2">
+                                        <div class="w-auto p-2">
+                                            <span class="inline-block text-xl text-white font-semibold tracking-tight">1.</span>
+                                        </div>
+                                        <div class="flex-1 p-2">
+                                            <h3 class="mb-3 text-xl text-white font-semibold tracking-tight">Pindai Kode QR</h3>
+                                            <p class="text-xl text-gray-500 tracking-tight">Masuk ke halaman login, pindai Kode QR untuk mengakses gateway API dan mendapatkan token</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full p-4">
+                                    <div class="flex flex-wrap -m-2">
+                                        <div class="w-auto p-2">
+                                            <span class="inline-block text-xl text-white font-semibold tracking-tight">2.</span>
+                                        </div>
+                                        <div class="flex-1 p-2">
+                                            <h3 class="mb-3 text-xl text-white font-semibold tracking-tight">Autentikasi Perangkat Anda</h3>
+                                            <p class="text-xl text-gray-500 tracking-tight">Ikuti petunjuk di layar untuk melakukan mengautentikasi perangkat Anda.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full p-4">
+                                    <div class="flex flex-wrap -m-2">
+                                        <div class="w-auto p-2">
+                                            <span class="inline-block text-xl text-white font-semibold tracking-tight">3.</span>
+                                        </div>
+                                        <div class="flex-1 p-2">
+                                            <h3 class="mb-3 text-xl text-white font-semibold tracking-tight">Mulai Gunakan API</h3>
+                                            <p class="text-xl text-gray-500 tracking-tight">Setelah autentikasi selesai, maka akan di arahkan ke halaman pendaftaran, masukan url webhook dan secretmu!, untuk dapat mengirim pesan wa.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex-1 p-2">
-                              <h3 class="mb-3 text-xl text-white font-semibold tracking-tight">Choose the right tool</h3>
-                              <p class="text-xl text-gray-500 tracking-tight">Use and re-use tons of responsive sections too a main create the perfect layout.</p>
-                            </div>
-                          </div>
                         </div>
-                        <div class="w-full p-4">
-                          <div class="flex flex-wrap -m-2">
-                            <div class="w-auto p-2">
-                              <span class="inline-block text-xl text-white font-semibold tracking-tight">2.</span>
-                            </div>
-                            <div class="flex-1 p-2">
-                              <h3 class="mb-3 text-xl text-white font-semibold tracking-tight">Set up your account</h3>
-                              <p class="text-xl text-gray-500 tracking-tight">Use and re-use tons of responsive sections too a main create the perfect layout.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="w-full p-4">
-                          <div class="flex flex-wrap -m-2">
-                            <div class="w-auto p-2">
-                              <span class="inline-block text-xl text-white font-semibold tracking-tight">3.</span>
-                            </div>
-                            <div class="flex-1 p-2">
-                              <h3 class="mb-3 text-xl text-white font-semibold tracking-tight">Start using Basko</h3>
-                              <p class="text-xl text-gray-500 tracking-tight">Use and re-use tons of responsive sections too a main create the perfect layout.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="w-full md:w-1/2 p-8">
-                    <div class="group relative max-w-max ml-auto">
-                      <a class="absolute top-1/2 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-20 h-20 bg-white hover:bg-gray-200 rounded-full transition duration-200" href="#">
-                        <svg width="21" height="23" viewbox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M4.29871 0.690679C2.36694 -0.459709 0.800781 0.482703 0.800781 2.79393V19.8498C0.800781 22.1633 2.36694 23.1045 4.29871 21.9552L18.6583 13.4058C20.5907 12.255 20.5907 10.3905 18.6583 9.23999L4.29871 0.690679Z" fill="#5E27FF"></path>
-                        </svg>
-                      </a>
-                      <div class="max-w-max overflow-hidden rounded-xl">
-                        <img class="transform group-hover:scale-105 transition duration-500" src="basko-assets/images/headers/video.png" alt="">
-                      </div>
+                    <div class="w-full md:w-1/2 p-8">
+                        <div class="max-w-max overflow-hidden rounded-xl">
+                            <img class="transform group-hover:scale-105 transition duration-500" src="images/device.jpg" alt="Kode QR">
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>            
             </div>
           </div>
           <div class="absolute bottom-0 left-0 w-full">
