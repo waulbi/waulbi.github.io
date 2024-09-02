@@ -17,14 +17,11 @@
       <section class="overflow-hidden" x-data="{ mobileNavOpen: false }">
         <div class="bg-indigo-500">
           <div class="container px-4 mx-auto">
-            <div class="flex items-center justify-between py-5">
+            <div class="flex justify-center py-5">
               <div class="w-auto">
-                
-              </div>
-              <div class="w-auto">
-                <div class="flex flex-wrap items-center">
+                <div class="flex flex-wrap items-center justify-center">
                   <div class="w-auto hidden lg:block">
-                    <ul class="flex items-center mr-8">
+                    <ul class="flex items-center justify-center mr-8">
                       <li class="mr-14 font-medium text-white hover:text-gray-200 tracking-tight"><a href="#">Features</a></li>
                       <li class="mr-14 font-medium text-white hover:text-gray-200 tracking-tight"><a href="#">Pricing</a></li>
                       <li class="mr-8 font-medium text-white hover:text-gray-200 tracking-tight border-r border-gray-500 pr-8"><a href="#">Automation</a></li>
@@ -32,7 +29,7 @@
                     </ul>
                   </div>
                   <div class="w-auto hidden lg:block">
-                    
+                    <!-- Bagian ini dibiarkan kosong karena tidak ada konten -->
                   </div>
                   <div class="w-auto lg:hidden">
                     <button x-on:click="mobileNavOpen = !mobileNavOpen">
@@ -46,6 +43,8 @@
               </div>
             </div>
           </div>
+        </div>
+        
           <div :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}" class="hidden fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50">
             <div x-on:click="mobileNavOpen = !mobileNavOpen" class="fixed inset-0 bg-gray-800 opacity-80"></div>
             <nav class="relative z-10 px-9 pt-8 bg-black h-full overflow-y-auto">
