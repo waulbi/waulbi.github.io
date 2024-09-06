@@ -44,7 +44,7 @@
                 <div class="w-auto p-1.5">
                   <div class="inline-block"><a class="inline-block px-5 py-3 text-white hover:text-indigo-500 font-semibold text-center tracking-tight bg-indigo-500 hover:bg-white border rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200" href="https://wa.ulbi.ac.id/apidocs/">Dokumentasi API</a></div>
                 </div>
-                <div class="w-auto p-1.5"><a class="inline-block px-5 py-4 font-semibold tracking-tight bg-gray-50 hover:bg-gray-200 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200" href="https://wa.ulbi.ac.id/login/">Login</a></div>
+                <!-- <div class="w-auto p-1.5"><a class="inline-block px-5 py-4 font-semibold tracking-tight bg-gray-50 hover:bg-gray-200 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200" href="https://wa.ulbi.ac.id/login/">Login</a></div> -->
               </div>
             </div>
             <div class="relative z-10 overflow-hidden rounded-xl">
@@ -65,7 +65,7 @@
                   </div>
                   <div class="flex-1 p-2">
                     <div class="max-w-xs mx-auto py-0.5 px-4 text-sm text-white text-opacity-50 text-center bg-white bg-opacity-10 tracking-tight rounded">
-                      <span>QR Code</span>
+                      <span>apidocs</span>
                     </div>
                   </div>
                 </div>
@@ -81,8 +81,8 @@
                                             <span class="inline-block text-xl text-white font-semibold tracking-tight">1.</span>
                                         </div>
                                         <div class="flex-1 p-2">
-                                            <h3 class="mb-3 text-xl text-white font-semibold tracking-tight">Pindai Kode QR</h3>
-                                            <p class="text-xl text-gray-500 tracking-tight">Akses halaman login dan pindai kode QR untuk mengakses gateway API serta mendapatkan token.</p>
+                                            <h3 class="mb-3 text-xl text-white font-semibold tracking-tight">Siapkan Wa Bussiness</h3>
+                                            <p class="text-xl text-gray-500 tracking-tight">Mengatur akun WhatsApp Business dengan nomor telepon yang valid. Masukkan token API untuk melakukan otorisasi akses ke layanan WhatsApp API.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -92,8 +92,8 @@
                                             <span class="inline-block text-xl text-white font-semibold tracking-tight">2.</span>
                                         </div>
                                         <div class="flex-1 p-2">
-                                            <h3 class="mb-3 text-xl text-white font-semibold tracking-tight">Autentikasi Perangkat Anda</h3>
-                                            <p class="text-xl text-gray-500 tracking-tight">Setelah berhasil memindai kode QR, Anda akan diarahkan ke halaman pendaftaran. Masukkan URL webhook dan secret Anda untuk mendapatkan kode link perangkat WhatsApp.</p>
+                                            <h3 class="mb-3 text-xl text-white font-semibold tracking-tight">Registrasi Webhook</h3>
+                                            <p class="text-xl text-gray-500 tracking-tight">Daftarkan URL webhook dan secret key untuk menghubungkan perangkat WhatsApp Business dengan API.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@
                                         </div>
                                         <div class="flex-1 p-2">
                                             <h3 class="mb-3 text-xl text-white font-semibold tracking-tight">Mulai Kirim Pesan</h3>
-                                            <p class="text-xl text-gray-500 tracking-tight">Setelah autentikasi selesai, Anda dapat langsung menggunakan API untuk mengirim pesan melalui WhatsApp.</p>
+                                            <p class="text-xl text-gray-500 tracking-tight">Setelah otorisasi selesai, gunakan API untuk mengirim pesan melalui WhatsApp.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -113,7 +113,7 @@
                     </div>
                     <div class="w-full md:w-1/2 p-8">
                         <div class="max-w-max overflow-hidden rounded-xl">
-                            <img class="transform group-hover:scale-105 transition duration-500" src="images/device.jpg" alt="Kode QR">
+                            <img class="transform group-hover:scale-105 transition duration-500"  src="images/link.jpg" alt="Kode QR">
                         </div>
                     </div>
                 </div>
@@ -176,17 +176,22 @@
               </div>
               <div class="w-full md:w-1/2 p-8">
                 <div class="flex flex-wrap justify-between -m-8">
-                  <div class="w-auto p-8">
-                    <h3 class="mb-12 text-gray-500 font-semibold tracking-tight">Pages</h3>
-                    <ul>
-                      <li class="mb-6 text-gray-200 tracking-tight"><a class="text-gray-700 hover:text-gray-600 font-medium tracking-tight transition duration-200" href="#">Features</a></li>
-                      <li class="mb-6 text-gray-200 tracking-tight"><a class="text-gray-700 hover:text-gray-600 font-medium tracking-tight transition duration-200" href="#">Pricing</a></li>
-                      <li class="mb-6 text-gray-200 tracking-tight"><a class="text-gray-700 hover:text-gray-600 font-medium tracking-tight transition duration-200" href="#">Afiliate Program</a></li>
-                      <li class="text-gray-200 tracking-tight"><a class="text-gray-700 hover:text-gray-600 font-medium tracking-tight transition duration-200" href="#">Press Kit</a></li>
-                    </ul>
-                  </div>
+                    <div class="w-auto p-8">
+                        <h3 class="mb-12 text-gray-500 font-semibold tracking-tight">Kontak</h3>
+                        <ul>
+                            <li class="mb-6 text-gray-200 tracking-tight">
+                                <span class="text-gray-700 font-medium tracking-tight">WA: </span>
+                                <a class="text-gray-700 hover:text-gray-600 font-medium tracking-tight transition duration-200" href="https://wa.me/628999808001">08999808001</a>
+                            </li>
+                            <li class="mb-6 text-gray-200 tracking-tight">
+                                <span class="text-gray-700 font-medium tracking-tight">Email: </span>
+                                <a class="text-gray-700 hover:text-gray-600 font-medium tracking-tight transition duration-200" href="mailto:">ulbi.ac.id</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
+            </div>
+            
             </div>
           </div>
           <div class="py-6">
